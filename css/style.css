@@ -1,0 +1,1400 @@
+
+@font-face {
+    font-family: mont;
+    src: url(../Fonts/Mont-Regular.otf);
+}
+@font-face {
+    font-family: mont-h;
+    src: url(../Fonts/Mont-Heavy.otf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: urdu;
+    src: url(../Fonts/Noto-Nastaliq-Urdu.ttf.eot);
+}
+@font-face {
+    font-family: urdut;
+    src: url(../Fonts/Noto-Nastaliq-Urdu.ttf.woff);
+}
+*{
+    font-family: montserrat, sans-sarif;
+}
+h1,h2,h3,h4,h5,p,ul,li{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 38px;
+    font-weight: 800; font-family:mont-h, serif;
+}
+h2{font-size: 40px; color:white; font-weight: 400; font-family:mont-h, serif;}
+h3{font-size: 32px; font-weight: 600;}
+h4{font-size: 24px; font-weight: 600;}
+h5{font-size: 20px; font-weight: 600;}
+h6{font-size: 18px; font-weight: 500; color:white; }
+p , label{
+    font-family: montserrat, sans-serif;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.top-bar{
+    width: 100%;
+    height: 20px;
+    min-height: 20px;
+    background-color: #20325a;
+}
+.top-sec{
+    background-image: url(../images/top-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    min-height: 550px;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.nav-item{
+    padding:0 12px;
+    color: #20325a;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-link:hover{
+    color: #ef4b4c !important;
+}
+.nav-item a{
+    color: #20325a !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar-brand img{
+    height: 45px;
+    width: auto;
+}
+.navbar-brand img:hover{
+    filter: invert(1);
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+.nav-item .btn{
+    border: 1px solid #20325a;
+    border-radius: 50px 0 50px 50px;
+    padding: 7px 20px !important;
+}
+.banner-left h1{
+    margin-top: 50px;
+    line-height: 45px;
+    color:white;
+}
+.lang-btn{
+    background-color: #ef4b4c;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #ef4b4c;
+    font-size: 14px;
+    text-decoration: none;
+}
+.eng-btn{
+    padding: 7px 10px;
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+.urdu-btn{
+    clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -20px;
+    background-color: #fff;
+    color: #ef4b4c;
+    padding: 5px 15px 6px;
+    font-size: 16px;
+  }
+  .urdu-page .eng-btn{
+    background-color: #fff;
+    color: #ef4b4c;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+
+}
+  .urdu-page .urdu-btn{
+      color: #fff;
+      padding: 5px 15px 6px;
+      background-color: #ef4b4c;
+  }
+.banner-left h1:before{
+    content: '';
+    width: 170px;
+    height: 2px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-top: 140px;
+}
+.banner-left h1 span{
+    font-weight: 300;
+}
+.banner-left h5{
+    color: white;
+    margin: 60px 0px 15px;
+}
+.banner-left h2{
+    background-color: #ef4b4c;
+    border-radius: 50px 0 50px 50px;
+    padding: 5px 20px;
+    display: inline;
+    margin-left: -22px;
+}
+.youtube-video-place img{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    /* mask-image: linear-gradient(to bottom, rgba(10, 11, 114, 0) 0%,rgba(62, 122, 233, 0.65) 40%);
+     -webkit-mask-image: linear-gradient(to bottom, rgba(55, 44, 201, 0) 0%,rgba(12, 10, 105, 0.65) 40%); */
+ /* opacity: .8; */
+ filter:contrast(.9);
+}
+.youtube-video-place img:hover{
+    opacity:1;
+    /* mask-image:none;
+    -webkit-mask-image: none; */
+    /* filter:contrast(1.1); */
+    background-image: url(../images/hoover.webp);
+    mask-image: url(../images/hoover.webp);
+}
+.top-img{
+    margin-top: -316px;
+    padding-left: 160px;
+}
+.top-img img{
+    height: 400px;
+    width: auto;
+    margin: 0  auto;
+    display: block;
+}
+.banner-right {
+    background-color: #e9e9eb;
+    padding: 0;
+    padding-top: 4px;
+    text-align: center;
+    margin: -71px auto 0;
+}
+.banner-right form{
+    margin-top: 0px;
+    padding: 10px 15px;
+}
+.top-sec .col-lg-3{
+    width: 320px;
+    height: 622px;
+    height: fit-content;
+}
+.urdu-page .top-sec .col-lg-3{
+    width: 320px;
+    height: 610px;
+}
+.form-top h5, .submit-btn{
+    background-color: #ef4b4c;
+    border-radius: 50px 0 50px 50px;
+    padding: 4px 20px;
+    color: white;
+    width: 218px;
+    font-size: 18px;
+    margin: 10px auto 15px;
+}
+.submit-btn:hover{
+    background-color: #fff;
+    color: #ef4b4c;
+    outline: 2px solid #ef4b4c;
+}
+.form-top h5{
+    margin: 22px auto;
+}
+.form-top .submit-btn:hover{
+    background-color: #20325a;
+    color: #e9e9eb !important;
+}
+form .form-control, .form-select{
+    border-radius: 20px;
+}
+.urdu-page form .form-select{
+    line-height: 3;
+    font-size: 12px ;
+}
+.banner-right h4{
+    color: #ef4b4c;
+    margin-bottom: 15px;
+}
+.urdu-page .banner-right h4 {
+    margin-top: 15px;
+}
+.banner-right .session-start{
+    margin-bottom: 0;
+}
+.banner-right h4>span>sup{
+    font-size: 13px;
+}
+.second-sec .container-fluid{
+    background-color: #f7f5f5;
+    margin-top: 77px;
+}
+.second-sec .col-lg-9{
+    border-right: 5px solid #102a61;
+}
+.second-sec .col-lg-3{
+    background-color: white;
+}
+.second-sec .policies{
+    margin: auto 0;
+}
+.policy-part{
+    display: flex;
+    line-height: 15px;
+    margin: 15px 0;
+}
+.policy-part p{
+    line-height: 20px;
+    font-size: 14px;
+}
+.policy-part .policy-cont{
+    padding-right: 5px;
+}
+.policy-img{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 15px;
+}
+.skill-learn ul{
+    padding-left: 0;
+    columns: 2;
+}
+.about-class{
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+}
+.skill-learn li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-bottom: 18px;
+    padding-right: 20px;
+}
+.course-cont .skill-learn li{
+    margin-bottom: 25px;
+
+}
+.skill-learn li img{
+    width: 20px;
+    height: auto;
+    opacity: 0.8;
+}
+.about-class .skill-learn li img{
+    width: 50px;
+    height: 35px;
+}
+.skill-learn li>img{
+    padding-right: 15px;
+}
+.skill-learn h3{
+    color: #20325a;  
+}
+.skill-learn h3:before{
+    content: '';
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    z-index: 1;
+    background-color: #20325a;
+    margin-top: 54px;
+}
+.learning-skill{
+    margin-top: 25px;
+}
+.skill-learn p{
+    margin-top: 45px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+.skill-learn h4{
+    color:#20325a;
+    margin: 35px 0 20px; 
+}
+.instr-prof{
+    text-align: center;
+    background: linear-gradient(0deg, rgba(31,78,138,1) 21%, rgba(29,107,186,1) 100%);
+    color: #fff;
+    padding: 20px 12px;
+}
+.instr-prof img{
+    margin: 15px 0;
+    width: 90px;
+    border-radius: 50px
+}
+.instr-prof p{
+    margin:0;
+    padding-right: 0;
+    font-size: 14px;
+}
+.skill-learn .table{
+    background-color: #f7f5f5;
+    border-bottom: 7px solid #1d3d83;
+}
+.skill-learn .table .table-head td{
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    height: 35px;
+    padding: 20px 10px;
+    line-height: 23px;
+    background-color: #1d3d83;
+    border: 2px solid white;
+}
+table .form-top h5{
+    width: auto;
+    margin: 10px 0 5px;
+    font-size: 22px;
+}
+.apply-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+.skill-learn .table tbody>tr{
+    line-height: 35px;
+    vertical-align: middle;
+}
+.skill-learn .table tbody>tr>td{
+    text-align: center;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff ;
+    padding: 15PX 10px;
+}
+.btm-p{
+    margin-top: 0 !important;
+}
+.btn-fl{
+    margin-bottom: 40px;
+}
+.all-btn{
+    border-radius: 50px 0 50px 50px;
+    padding: 6px 20px;
+}
+.red-btn{
+    background-color: #ef4b4c;
+    color: #fff;
+    z-index: 3;
+}
+.f-btn{
+    z-index: 12;
+}
+.red-btn:hover{
+    color: #ef4b4c;
+    background-color: #fff;
+    outline: 2px solid #ef4b4c;
+}
+.col-sm-5{
+    z-index: 0;
+}
+.outline-btn{
+    outline: 2px solid #20325a;
+    color: #20325a;
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+.urdu-page .outline-btn{
+    margin-right: 15px;
+}
+.btn-center{
+    position: relative;
+    display: table;
+    margin: 30px auto 40px;
+}
+.bdyprt .btn-center{
+    margin: 0 auto;
+}
+.outline-btn:hover{
+    
+    outline: 2px solid #ef4b4c;
+    color: #fff;
+    background-color: #ef4b4c;
+}
+.learn-exp .container-fluid{
+    background-color: #f7f5f5;
+    padding-top: 0;
+}
+.learn-exp  .col-md-9{
+    border-right: 5px solid #102a61;
+    padding: 45px 0 0px;
+}
+.learn-exp  .col-lg-3{
+    background: #fff;
+}
+.img-crd{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-crd .crd img{
+    width: 100%;
+    height: auto;
+}
+.crd .crdp{
+    margin:22px 0 15px;
+    padding: 0;
+    width: 251px;
+    font-weight: 600;
+    text-align: center;
+}
+.course-cont{
+    margin: 50px 0 45px;
+}
+.course-cont h6{
+    color: #20325a;
+    font-family: montserrat;
+}
+.faqs .accordion-item{
+    border: none;
+    border-bottom: 1px solid #102a61;
+}
+.faqs .accordion-button{
+    padding: 25px 40px;
+    font-weight: normal;
+}
+.faqs .accordion-button:focus{
+    color: #102a61;
+}
+footer{
+    padding: 65px 0 120px;
+    background-color: #f7f5f5;
+    margin-top: 20px;
+}
+.skill-learn h3{
+    margin-bottom: 30px;
+}
+.learn-exp .skill-learn h3{
+    margin-top: 30px;
+}
+.logo-prt .ft-logo{
+    margin-bottom: 35px;
+}
+.logo-prt .ft-logo:hover{
+    filter: contrast(3);
+}
+.logo-prt ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.logo-prt ul>a>li{
+    border-radius: 50px;
+    border: 1px solid #20325a;
+    margin:15px 25px 0 0;
+    padding: 8px 12px;
+}
+.logo-prt ul>a>li:hover{
+    background-color: #ef4b4c;
+    border: 1px solid #ef4b4c;
+    transition: all 2s ease-out;
+}
+.logo-prt ul>a>li:hover img{
+    filter: brightness(500);
+}
+.logo-prt .fbimg img{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.ft-cntct ul{
+    list-style: none;
+}
+.ft-cntct li a{
+    text-decoration: none;
+    color: #20325a;
+    font-family: montserrat,serif;
+    margin-left: 20px;
+}
+.ft-cntct li a:hover{
+    color: #ef4b4c;
+}
+.ft-cntct li a:hover img{
+    filter:opacity(0.5);
+}
+.ft-cntct li{
+    margin-bottom: 20px;
+}
+.ft-cntct a img{
+    margin-right: 18px;
+}
+
+.certificate .skill-learn img{
+    width: 450px;
+    height: auto;
+}
+.topprt{
+    background: linear-gradient(270deg, rgba(31,78,138,1) 21%, rgba(29,107,186,1) 100%);
+    color: #fff;
+    padding: 25px 0 10px 40px;
+}
+.bdyprt{
+    padding: 25px 40px;
+    background-color: #f7f5f5;
+}
+.bdyprt ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.bdyprt ul>li img{
+    width: 10px;
+    margin-right: 14px;
+    font-size: 12px;
+    line-height: 108px;
+}
+.accordion-item{
+    border: none;
+}
+/* .crslist{
+    display: none;
+} */
+/* .faqlist{
+    display:none;
+} */
+.accordion-button span{
+    margin-left: auto;
+    font-family: montserrat;
+    text-align: right;
+}
+.urdu-page .accordion-button span{
+    font-family: urdut;
+}
+.course-cont .accordion-button{
+    background-color: #ebebeb;
+    border: none;
+    margin-bottom: 3px;
+}
+.accordion-body{
+    padding-left: 60px;
+    background-color: #f7f5f5;
+}
+.accordion-body ul{
+    columns: 1;
+}
+.accordion-body ul>li>a{
+    color: #474747;
+    border-bottom: 2px solid #ffffff;
+}
+.accordion-body span{
+    margin-left: auto;
+    font-family: montserrat;
+    color: #195cee; 
+    float: right;
+}
+.course-cont .accordion-button::before{
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 15px;
+    content: "";
+    background-image: url(../images/drop.svg);
+    background-repeat: no-repeat;
+}
+.course-cont .accordion-button:not(.collapsed)::before{
+    background-image: url(../images/drop.svg);
+    transform: rotate(-180deg);
+}
+.course-cont .accordion-button::after{
+    display: none;
+}
+button{
+    background: none;
+    border: none;
+}
+.modal-body p{
+    line-height: 2;
+}
+.modal-body input{
+    margin: 0 px;
+}
+.modal-body img{
+    margin: 25px auto 10px;
+    display: block;
+    width: 40%;
+}
+#thankyouModal img{
+    width: 100%;
+}
+.modal-body h6{
+    margin: 35px 0  15px;
+    font-size: 16px;
+    color: #000;
+}
+.model-footer .termsinput{
+    display: block;
+}
+#financial-popup .dcheck{
+    margin: 30px 10px 12px;
+    font-size: 14px;
+}
+#financial-popup input{
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.urdu-page #financial-popup input{
+    margin-left: 10px;
+    margin-right: 0;
+}
+.inplab{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.termsinput input[type=text]{
+    width: 65%;
+    display: block;
+}
+.termsinput code{
+    display: block;
+    margin-bottom: 3px;
+}
+.urdu-page .termsinput code{
+    text-align: right;
+}
+.fm-header{
+    background: linear-gradient(270deg, rgba(31,78,138,1) 21%, rgba(29,107,186,1) 100%);
+}
+.fmheader{
+    display: block;
+    text-align: center;
+    margin: 0 auto;color: white;
+    font-family: mont-h;
+}
+.fmheader h4{
+    margin-top: 20px;
+}
+
+.fm-body .fminput{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #20325a;
+}
+
+.fm-body .captext{
+    font-size: 12px;
+    color: #740c0c;
+}
+.modal-footer .btn-secondary{
+    background-color: #ef4b4c;
+    border: #ef4b4c;
+    padding: 10px 25px;
+}
+.btn.disabled{
+    opacity: .4;
+}
+.modal-footer .btn-primary{
+    background-color: #195cee;
+    border: #195cee;
+    padding: 10px 25px;
+}
+.fm-body label{
+    margin: 20px 0 5px;
+    font-weight: 600;
+}
+.fm-body .affordcls{
+    width: 48%;
+}
+.fm-header .fmheader .close-modal2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: brightness(50);
+}
+
+/* Urdu page  */
+
+.urdu-page *{
+    font-family: urdut;
+}
+.urdu-page .top-sec {
+    height: 600px;
+    min-height: 600px;
+}
+.urdu-page .top-img {
+    padding-left: 0px;
+    padding-right: 280px;
+    margin-top: -368px;
+}
+.urdu-page .skill-learn li>img {
+    padding-right: 0;
+    padding-left: 15px;
+}
+.urdu-page .accordion-button span {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+.urdu-page .course-cont .accordion-button::before {
+    height: 1.25rem;
+    margin-right: 0;
+    margin-left: 15px;
+}
+.urdu-page .bdyprt ul>li img {
+    width: 16px;
+    margin-right: 0;
+    margin-left: 14px;
+    font-size: 14px;
+    line-height: 108px;
+}
+.urdu-page .topprt {
+    padding: 25px 40px 10px 0px;
+}
+.urdu-page .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0;
+    margin-right: auto;
+}
+.urdu-page .ft-cntct a img {
+    margin-right: 0;
+    margin-left: 18px;
+}
+.urdu-page .accordion-body span {
+    margin-left: 0;
+    margin-right: auto;
+}
+.urdu-page .banner-left h1{
+    font-size: 35px;
+    line-height: 66px;
+}
+.urdu-page .banner-left h1:before{
+    margin-top: 208px;
+}
+.urdu-page h6{
+    line-height: 35px;
+}
+.urdu-page .form-top h5, .urdu-page .submit-btn{
+    padding: 2px 20px 10px;
+    font-size: 16px;
+}
+.urdu-page .banner-left h5{
+    margin: 50px 0 35px;
+}
+.urdu-page .banner-left h2{
+    padding: 6px 20px 10px;
+    line-height: 0px;
+    font-size: 32px;
+    margin: 0;
+    font-family: sans-serif;
+}
+.urdu-page .second-sec h5{
+    line-height: 50px;
+}
+.urdu-page .policy-part p , .urdu-page .skill-learn p{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.urdu-page .bdyprt ul>li{
+    margin-top: 10px;
+}
+.urdu-page footer p{
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.urdu-page footer a{
+    font-family: urdut;
+}
+.urdu-page table .form-top h5{
+    font-size: 22px;
+}
+.langbtn-div{
+    margin-left: auto;
+}
+.urdu-page .langbtn-div{
+    margin-left: 0;
+    margin-right: auto;
+    width: 107px;
+}
+.urdu-page .urdu-btn,.urdu-page .eng-btn{
+    font-family: serif;
+}
+.topimg_ur img{
+    margin-top: 50px;
+}
+.pymnt{
+    text-align: center;
+    margin: 40px 0;
+}
+.pymnt.jazzcash{
+    border-right: 2px solid black;;
+}
+.pymnt h4{
+    font-weight: 800;
+    font-size: 28px;
+}
+.pymnt p{
+    font-weight: 600;
+}
+.pymnt img{
+    width:auto !important;
+    max-width: 235px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.35);
+-webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.35);
+}
+@media (max-width:1400px){
+    .top-img img {
+        height: 340px;
+    }
+    .banner-right{
+    width: 270px;
+    position: fixed;
+    right: 13px;
+    top: 91px;
+    }
+    
+    .top-img {
+        padding-left: 208px;
+        margin-top: -700px;
+    }
+    .policy-part .policy-cont{
+        padding-right: 0;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .instr-prof p {
+        font-size: 13px;
+    }
+    .urdu-page .banner-right {
+        left: 13px;
+        right: auto;
+    }
+    .urdu-page .top-img {
+        margin-top: -800px;
+    }
+    
+
+}
+@media (max-width:1200px){
+    .banner-left h2 {
+        font-size: 34px;
+    }
+    .nav-item {
+        padding: 0 6px;
+    }
+    .nav-item .btn {
+        padding: 7px 10px !important;
+    }
+    .banner-left h1:before{
+        margin-top: 185px;
+    }
+    .banner-right{
+        width: 260px;
+        right: 5px;
+    }
+    .top-sec .col-lg-3{
+        width: 260px;
+    }
+    .nav-item a {
+        font-size: 13px
+    }
+    .youtube-video-place img{
+        height: 155px;
+    }
+    .top-img img {
+        height: 310px;
+    }
+    .submit-btn {
+        margin: 25px auto;
+    }
+    .top-img {
+        padding-left: 198px;
+        margin-top: -690px;
+    
+    }
+    .policy-part {
+        margin: 12px 0;
+        padding: 0 8px;
+    }
+    .policy-part p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .policy-img {
+        padding-right: 6px;
+    }
+    h5{
+        font-size: 16px;
+    }
+
+    .skill-learn li {
+        padding-right: 10px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .skill-learn .table .table-head td{
+        font-size: 14px;
+    }
+    .instr-prof{
+        padding: 16px 9px;
+    }
+    .table-sec .col-lg-10{
+        width: 100%;
+    }
+    .bdyprt {
+        padding: 25px 22px;
+    }
+    .img-crd .crd img{
+        width: 90%;
+    }
+    .certificate .skill-learn img {
+        width: 370px;
+    }
+    .crd .crdp{
+        text-align: left;
+    }
+    .logo-prt ul>a>li {
+        margin: 12px 16px 0 0;
+        padding: 4px 8px;
+    }
+    .ft-cntct{
+        width: 360px;
+    }
+    .logo-prt{
+        width: 360px;
+    }
+    .urdu-page .top-img {
+        margin-top: -775px;
+        padding-right: 177px;
+    }
+    .urdu-page .crd .crdp {
+        text-align: right;
+    }
+    .urdu-page .skill-learn li{
+        margin-bottom: 36px;
+    }
+}
+@media (max-width:991px){
+
+    #sticker{
+        right: 0;
+        display: none;
+        width: 300px;
+        height: 585px;
+        position: absolute;
+        z-index: 10 !important;
+    }
+    .urdu-page #sticker{
+        height: 579px;
+    }
+    .banner-left h1 {
+        font-size: 36px;
+    }
+    .banner-left h1:before {
+        margin-top: 140px;
+    }
+    .logo-prt{
+        width: 360px;
+    }
+    .top-img img {
+        height: 316px;
+    }
+    .top-img {
+        margin-top: -749px;
+    }
+    .submit-btn {
+        margin: 15px auto;
+    }
+    .top-sec {
+        height: 400px;
+        min-height: 487px;
+    }
+    .skill-learn h3 {
+        margin-bottom: 40px;
+    }
+    .skill-learn p {
+        margin-top: 38px;
+        margin-bottom: 25px;
+    }
+    .learn-exp .container-fluid{
+        background-color: #f7f5f5;
+    }
+    .topprt h1{
+        font-size: 42px;
+    }
+    .topprt{
+        padding-left: 22px;
+    }
+    .instr-prof p{
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+    .modal-dialog {
+        max-width: 575px;
+    }
+    .urdu-page #sticker{
+        left: auto;
+        right: 16px;
+    }
+    .urdu-page .outline-btn{
+        margin-right: 12px;
+        margin-left: 0;
+    }
+    .langbtn-div{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:767px){
+    .top-img img {
+        height: 212px;
+    }
+    .top-img {
+        margin-top: -732px;
+    }
+    .img-crd {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .banner-left h1:before {
+        margin-top: 185px;
+    }
+    .banner-left h5 {
+        margin: 40px 0px 15px;
+    }
+    .policy-img img{
+        width:50px;
+    }
+    .policy-part p {
+        font-size: 10px;
+    }
+    h5 {
+        font-size: 22px;
+    }
+    .crd{
+        width: 33%;
+    }
+    .crd .crdp {
+        width: 73%;
+        margin: 10px 0 10px;
+        font-size: 14px;
+    }
+    .accordion-button{
+        padding: 1rem .75rem;
+        line-height: 2;
+    }
+    .course-cont .accordion-button::before {
+        margin-right: 5px;
+    }
+    .btn-center {
+        margin: 20px auto 18px;
+        position: relative;
+        z-index: 0;
+    }
+    .topprt h1 {
+        font-size: 32px;
+    }
+    .topprt p{
+        font-size: 14px;
+    }
+    .bdyprt {
+        padding: 15px;
+        position: relative;
+        z-index: -2;
+    }
+    .appbgz{
+        margin: 20px 0;
+        z-index: 2;
+    }
+    .bdyprt ul>li img {
+        margin-right: 8px;
+    }
+    .second-sec .container-fluid {
+        margin-top: 28px;
+    }
+    .table>:not(caption)>*>*{
+        padding: .25rem;
+    }
+    .skill-learn .table tbody>tr {
+        line-height: 27px;
+    }
+    .accordion-body {
+        padding-left: 25px;
+    }
+    .faqs .accordion-button {
+        padding: 17px 21px;
+        line-height: 2;
+    }
+    .ft-cntct{
+        margin-top: 30px;
+    }
+    footer {
+        padding: 40px 0 25px;
+    }
+    .ft-cntct li a{
+        margin-left: 0;
+    }
+    .instr-prof {
+        padding: 20px;
+    }
+    .skill-learn li {
+        font-size: 15px;
+    }
+    .instr-prof img {
+        width: 120px;
+        border-radius: 65px;
+    }
+    .topimg_ur img{
+        margin-top: 130px;
+    }
+    .urdu-page .banner-left h2 {
+        font-size: 28px;
+    }
+}
+@media (max-width:576px){
+    h1{font-size: 36px;}
+    h6{
+        font-size: 16px;
+    }
+    
+    .langbtn-div{
+        margin-right: 0px;
+        font-family: sans-serif !important;
+    }
+    .top-img img {
+        width: 335px;
+        margin-top: 20px;
+    }
+    .banner-left h5 {
+        color: white;
+        margin: 26px 0px 15px;
+    }
+    .banner-left h1:before {
+        margin-top: 105px;
+    }
+    .banner-left h1 {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .banner-left h2 {
+        margin-left: 0;
+        font-size: 24px;
+        padding: 5px 20px;
+    }
+    
+    .top-sec {
+        height: 440px;
+        min-height: 560px;
+    }
+    .top-img {
+        margin-top: -608px;
+        padding-left: 0;
+    }
+    .second-sec .policies{
+        background-color: #f7f5f5;
+        margin-top: 15px;
+    }
+    .second-sec .container-fluid {
+        margin-top: 50px;
+        height: auto;
+    }
+    .skill-learn h3 {
+        margin-bottom: 30px;
+    }
+    .certificate .skill-learn img{
+        width: 100%;
+    }
+    .topimg_ur img{
+        margin-top: 75px;
+    }
+    .skill-learn ul {
+        columns: 1;
+        margin-left: 15px;
+    }
+    .skill-learn h4 {
+        margin-bottom: 25px;
+    }
+    .skill-learn li {
+        margin-bottom: 14px;
+    }
+    .instr-prof {
+        padding: 25px;
+    }
+    .instr-prof p {
+        font-size: 14px;
+    }
+    .instr-prof h5 {
+        font-size: 24px;
+    }
+    .instr-prof img {
+        margin: 15px 0 10px;
+        width: 40%;
+        border-radius: 50%;
+    }
+    .skill-learn h3:before {
+        margin-top: 48px;
+    }
+    .skill-learn .table .table-head td {
+        height: 70px;
+        vertical-align: middle;
+        min-height: 70px;
+        line-height: 20px;
+    }
+    table .form-top h5 {
+        padding: 5px 10px;
+    }
+    table .form-top h5 {
+        padding: 10px 6px;
+        font-size: 16px;
+    }
+    .skill-learn .table tbody>tr>td {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .outline-btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .btn-fl .red-btn{
+        padding: 6px 40px;
+    }
+    .crd {
+        width: 50%;
+    }
+    .learn-exp .skill-learn h3:before{
+        margin-top: 45px;
+    }
+    .course-cont .accordion-button::before {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 5px;
+    }
+    .bdyprt{
+        margin-bottom: 35px;
+    }
+    .logo-prt .ft-logo {
+        margin-bottom: 15px;
+    }
+    .nav-item .btn{
+        display: contents;
+    }
+    .accordion-button span {
+        font-size: 14px;
+    }
+    .ft-cntct, .logo-prt{
+        width: 100%;
+    }
+    .urdu-page .banner-left h1{
+        font-size: 28px;
+        line-height: 55px;
+    }
+    .urdu-page .banner-left h1:before {
+        margin-top: 175px;
+    }
+    .urdu-page .top-img {
+        margin-top: -646px;
+        padding-right: 0;
+    }
+    .urdu-page .banner-left h5 {
+        margin: 30px 0 25px;
+    }
+    .urdu-page .skill-learn h3:before {
+        margin-top: 58px;
+    }
+    .urdu-page table .form-top h5 {
+        font-size: 18px;
+    }
+    .urdu-page .skill-learn .table tbody>tr>td{
+        padding: 15px 5px;
+    }
+    .urdu-page .btn-fl .red-btn {
+        padding: 6px 47px;
+        margin-right: 10px;
+    }
+    .urdu-page .outline-btn {
+        padding: 5px 16px;
+    }
+    .f-btn {
+        z-index: 12;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .urdu-page .banner-left h2{
+        padding: 6px 20px 10px;
+        line-height: 0px;
+        font-size: 24px;
+        margin: 0;
+        font-family: sans;
+    }
+    .urdu-page .langbtn-div {
+        width: fit-content;
+    }
+    .navbar-light .navbar-brand {
+        margin-right: 0;
+    }
+    .eng-btn {
+        padding: 7px 9px 7px 5px;
+    }
+    .pymnt.jazzcash{
+        border-right: 0px;;
+    }
+}
+
+@media (max-width:540px){
+    .banner-left h1:before {
+        margin-top: 138px;
+    }
+    .learn-exp .skill-learn h3:before{
+        margin-top: 88px;
+    }
+    .urdu-page .learn-exp .skill-learn h3:before {
+        margin-top: 60px;
+    }
+}
+@media (max-width:420px){
+    .table-sec .skill-learn h3:before{
+        margin-top: 88px;
+    }
+    .urdu-page .table-sec .skill-learn h3:before{
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
